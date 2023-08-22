@@ -55,7 +55,7 @@ defaults:
   use_clip_reward: False
   multi_vidlang: False 
   multi_task_vidlang: False 
-  internvideo_load_dir: "/home/ademi_adeniji/InternVideo/Pretrain/Multi-Modalities-Pretraining/models/InternVideo-MM-B-16.ckpt"
+  internvideo_load_dir: "InternVideo/Pretrain/Multi-Modalities-Pretraining/models/InternVideo-MM-B-16.ckpt"
   standardize_rewards: False 
   queue_size: 100000
   update_stats_steps: 2000

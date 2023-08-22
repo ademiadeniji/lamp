@@ -2,6 +2,10 @@
 
 **LA**nguage **M**odulated **P**retraining (LAMP) is a method for pretraining a general RL agent for accelerated downstream learning by augmenting unsupervised RL rewards with extrinsic rewards parameterized by a Video-Langauge Model (VLM). 
 
+Be sure to install the R3M module from [this fork](https://github.com/ademiadeniji/r3m) that enables computing video-language alignment scores.
+
+Follow the RLBench installation instructions from [this fork](https://github.com/ademiadeniji/rlbench_vlsp/tree/shapenet) that implements shaped rewards and the domain-randomized pretraining environment.
+
 To pretrain your LAMP agent run:
 
 ```

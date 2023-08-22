@@ -1,0 +1,12 @@
+telephone
+phone
+mobile phone
+cell phone
+landline
+cordless phone
+smart phone
+flip phone
+touchscreen phone
+wireless phone
+home phone
+office phonee

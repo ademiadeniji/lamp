@@ -1,0 +1,120 @@
+bag
+handbag
+purse
+clutch
+tote
+backpack
+knapsack
+satchel
+shoulder bag
+duffel bag
+messenger bag
+grip
+briefcase
+pouch
+fanny pack
+drawstring bag
+beach bag
+grocery bag
+shopping bag
+gift bag
+lunch bag
+laptop bag
+travel bag
+bowl
+dish
+soup bowl
+wooden bowl
+plastic bowl
+cap
+hat
+snapback
+baseball cap
+visor
+bucket hat
+fedora
+cowboy hat
+knit cap
+nightcap
+earphone
+headphone
+earbud
+in-ear monitor
+earpiece
+earphone set
+earphone accessory
+faucet
+tap
+valve
+spout
+handle
+lever
+knob
+spigot
+water dispenser
+sink faucet
+bathtub faucet
+drinking fountain
+water faucet
+mixing faucet
+jar 
+vase
+container
+bottle
+canister
+pot
+urn
+jug
+flask
+pitcher
+bucket
+pail
+basket
+knife
+blade
+cutter
+chopper
+cleaver
+pocket knife
+Swiss army knife
+laptop
+notebook
+ultrabook
+netbook
+tablet
+chromebook
+computer
+mug
+cup
+tumbler
+teacup
+coffee cup
+espresso cup
+beer mug
+wine glass
+goblet
+flute
+martini glass
+punch cup
+thermal mug
+plastic cup
+styrofoam cup
+paper cup
+pot
+flowerpot
+vase
+container
+plant pot
+flower holder
+telephone
+phone
+mobile phone
+cell phone
+landline
+cordless phone
+smart phone
+flip phone
+touchscreen phone
+wireless phone
+home phone
+office phonee

@@ -1,0 +1,40 @@
+The [NOUN] is seized
+The [NOUN] is clutched
+The [NOUN] is gripped
+The [NOUN] is firmly grasped
+The [NOUN] is tightly held
+The [NOUN] is firmly caught
+The [NOUN] is securely clasped
+The [NOUN] is rotated
+The [NOUN] has been flipped
+The [NOUN] has been knotted
+The [NOUN] has been folded
+The [NOUN] has been rinsed
+The [NOUN] has been filled
+The [NOUN] is shaken
+The [NOUN] has been scooped
+The [NOUN] is poured
+The [NOUN] has been scrubbed
+The [NOUN] is tilted
+The [NOUN] has been heated
+Reach for the [NOUN]
+Grasp at the [NOUN]
+Stretch out to touch the [NOUN]
+Move your arm towards the [NOUN]
+Use the gripper to rinse the [NOUN]
+Position the end effector to fold the [NOUN]
+Reach out the robotic arm to wipe the [NOUN]
+Utilize the gripper to seize the [NOUN]
+Guide the robotic arm to obtain the [NOUN]
+Maneuver the end effector to lift up the [NOUN]
+Extend your hand towards the [NOUN]
+Reach out your hand to acquire the [NOUN]
+Guide your arm to rotate the [NOUN]
+Maneuver your hand to shake up the [NOUN]
+Flip the [NOUN]
+Tap the [NOUN]
+Fold the [NOUN]
+Rotate the [NOUN]
+Brush the [NOUN]
+Twist the [NOUN]
+Wipe the [NOUN]

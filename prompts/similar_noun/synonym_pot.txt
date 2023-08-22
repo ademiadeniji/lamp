@@ -1,0 +1,6 @@
+pot
+flowerpot
+vase
+container
+plant pot
+flower holder

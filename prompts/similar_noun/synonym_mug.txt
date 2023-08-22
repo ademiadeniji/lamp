@@ -1,0 +1,16 @@
+mug
+cup
+tumbler
+teacup
+coffee cup
+espresso cup
+beer mug
+wine glass
+goblet
+flute
+martini glass
+punch cup
+thermal mug
+plastic cup
+styrofoam cup
+paper cup

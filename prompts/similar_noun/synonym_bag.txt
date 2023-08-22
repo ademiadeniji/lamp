@@ -1,0 +1,23 @@
+bag
+handbag
+purse
+clutch
+tote
+backpack
+knapsack
+satchel
+shoulder bag
+duffel bag
+messenger bag
+grip
+briefcase
+pouch
+fanny pack
+drawstring bag
+beach bag
+grocery bag
+shopping bag
+gift bag
+lunch bag
+laptop bag
+travel bag

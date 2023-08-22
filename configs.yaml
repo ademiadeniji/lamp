@@ -1,0 +1,196 @@
+defaults:
+
+  # Train Script
+  logdir: /dev/null
+  loaddir: ''
+  ts: ''
+  seed: 0
+  task: 'take_lid_off_saucepan'
+  envs: 1
+  envs_parallel: process
+  render_size: [128, 128]
+  time_limit: 150
+  steps: 1002000
+  log_every: 1e3
+  eval_every: 1e4
+  eval_eps: 10
+  prefill: 0
+  pretrain: 1000
+  mae_pretrain: 10000
+  train_every: 2
+  train_mae_every: 2
+  train_steps: 1
+  train_mae_steps: 1
+  replay: {capacity: 2e6, minlen: 1, maxlen: 50, prioritize_ends: True}
+  dataset: {batch: 50, length: 50}
+  mae_dataset: {batch: 32, length: 32}
+  log_keys_video: ['image']
+  log_keys_sum: '^$'
+  log_keys_mean: '^$'
+  log_keys_max: '^$'
+  precision: 16
+  jit: True
+  action_repeat: 1
+  device: 'cuda:0'
+  vidlang_model_device: 'cuda:1'
+  actor_linear_probe: False
+  critic_linear_probe: False
+  scripted_corner: 'top_left'
+  randomize: False
+  tune_instruction: False
+  num_tune_instructions: 10
+  instructions_file: ''
+
+  # Env
+  eval_noise: 0.0
+  expl_noise: 0.0
+  franka_kitchen: False
+
+  # Agent
+  clip_rewards: identity
+
+  # Foundation Model
+  use_r3m_reward: False 
+  use_internvideo_reward: False
+  use_clip_reward: False
+  multi_vidlang: False 
+  multi_task_vidlang: False 
+  internvideo_load_dir: "/home/ademi_adeniji/InternVideo/Pretrain/Multi-Modalities-Pretraining/models/InternVideo-MM-B-16.ckpt"
+  standardize_rewards: False 
+  queue_size: 100000
+  update_stats_steps: 2000
+  num_top_images: 2 
+  use_zero_rewards: False
+  boundary_reward_penalty: False 
+  use_lang_embeddings: False 
+
+  # Demo
+  num_demos: 100
+  shaped_rewards: True
+
+  # MAE
+  camera_keys: 'image_front|image_wrist'
+  mask_ratio: 0.95
+  mae: {img_h_size: 128, img_w_size: 128, patch_size: 16, embed_dim: 256, depth: 8, num_heads: 4, decoder_embed_dim: 256, decoder_depth: 6, decoder_num_heads: 4, reward_pred: True, early_conv: True, state_pred: True, in_chans: 3, ncams: 0, state_dim: 10, view_masking: True, control_input: 'front_wrist'}
+  wm_flat_vit: {img_h_size: 8, img_w_size: 8, patch_size: 1, embed_dim: 128, depth: 2, num_heads: 4, decoder_embed_dim: 128, decoder_depth: 2, decoder_num_heads: 4, in_chans: 256, state_pred: False}
+  image_t_size: 4
+  mae_chunk: 1
+  mae_avg: False
+
+  # World Model
+  grad_heads: [reward, discount]
+  pred_discount: True
+  rssm: {action_free: False, hidden: 1024, deter: 1024, stoch: 32, discrete: 32, act: elu, norm: none, std_act: sigmoid2, min_std: 0.1}
+  reward_head: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: symlog}
+  discount_head: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: binary}
+  loss_scales: {feature: 1.0, kl: 1.0, reward: 1.0, discount: 1.0, proprio: 1.0, mae_reward: 1.0}
+  wmkl: {scale: 1.0}
+  wmkl_minloss: 0.1
+  wmkl_balance: 0.8
+  model_opt: {opt: adam, lr: 3e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, wd_pattern: 'kernel', warmup: 0}
+  mae_opt: {opt: adam, lr: 3e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, warmup: 2500}
+
+  # Actor Critic
+  actor: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: trunc_normal, min_std: 0.1}
+  critic: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: mse}
+  actor_opt: {opt: adam, lr: 1e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, wd_pattern: 'kernel', warmup: 0}
+  critic_opt: {opt: adam, lr: 1e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, wd_pattern: 'kernel', warmup: 0}
+  discount: 0.99
+  discount_lambda: 0.95
+  imag_horizon: 15
+  actor_grad: dynamics
+  actor_grad_mix: 0.1
+  aent: {scale: 1e-4}
+  slow_target: True
+  slow_target_update: 100
+  slow_target_fraction: 1
+  slow_baseline: True
+  reward_norm: {momentum: 0.99, scale: 1.0, eps: 1e-8}
+  curriculum: {use: True, num_episodes: '100|100|100', neg_lang_prompt: 'reach away from bowl', lang_prompt: 'reach_for_bowl|reach_for_mug|reach_for_jar', objects: 'bowl|mug|jar', synonym_folder: null, num_objects: "3|3|3", num_unique_per_class: "-1|-1|-1"}
+
+  # Plan2Explore
+  plan2explore: False
+  expl_intr_scale: 0.5
+  expl_extr_scale: 0.5
+  expl_opt: {opt: adam, lr: 3e-4, eps: 1e-5, clip: 100, wd: 1e-6}
+  expl_head: {layers: [512, 512, 512, 512], act: elu, norm: none, dist: mse}
+  expl_reward_norm: {momentum: 1.0, scale: 1.0, eps: 1e-8}
+  disag_target: stoch
+  disag_log: False
+  disag_models: 10
+  disag_offset: 1
+  disag_action_cond: True
+  expl_model_loss: kl
+
+  # Rnd
+  rnd: False
+  rnd_embedding_dim: 512
+  rnd_hidden_dim: 256
+  rnd_opt: {opt: adam, lr: 3e-4, eps: 1e-5, clip: 100.0, wd: 1e-6, warmup: 2500}
+
+front:
+  camera_keys: image_front
+  mae.control_input: front
+
+wrist:
+  camera_keys: image_wrist
+  mae.control_input: wrist
+
+overhead:
+  camera_keys: image_overhead
+  mae.control_input: overhead
+
+front_wrist:
+  camera_keys: image_front|image_wrist
+  mae.control_input: front_wrist
+
+overhead_wrist:
+  camera_keys: image_overhead|image_wrist
+  mae.control_input: overhead_wrist
+
+front_wrist_to_front:
+  camera_keys: image_front|image_wrist
+  mae.control_input: front
+
+front_wrist_to_wrist:
+  camera_keys: image_front|image_wrist
+  mae.control_input: wrist
+
+vlsp:
+  image_t_size: 1
+  mae.view_masking: False
+  mae.depth: 3
+  mae.decoder_depth: 2
+  prefill: 200
+  num_demos: 0
+  mae_pretrain: 0
+  pretrain: 0
+
+ptmae:
+  mae.img_w_size: 224 
+  mae.img_h_size: 224 
+  wm_flat_vit.img_h_size: 7 
+  wm_flat_vit.img_w_size: 7 
+  mae.state_pred: False 
+  wm_flat_vit.in_chans: 768 
+  wm_flat_vit.embed_dim: 128
+  mae_avg: True
+
+debug:
+  eval_eps: 1
+  dataset.batch: 8
+  dataset.length: 10
+  mae_dataset.batch: 4
+  mae_dataset.length: 8
+  mae.depth: 1
+  mae.decoder_depth: 1
+  pretrain: 1
+  mae_pretrain: 1
+  num_demos: 1
+  rssm.hidden: 64
+  rssm.deter: 64
+  rssm.stoch: 4
+  rssm.discrete: 4
+  imag_horizon: 3
+  jit: False
+  log_every: 100

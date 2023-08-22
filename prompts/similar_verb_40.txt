@@ -1,0 +1,40 @@
+Pick up the [NOUN]
+Lift the [NOUN] with your hands
+Hold the [NOUN] in your grasp
+Take hold of the [NOUN] and raise it
+Grasp the [NOUN] firmly and lift it up
+Raise the [NOUN] by picking it up
+Retrieve the [NOUN] and hold it up
+Lift the [NOUN] by gripping it
+Seize the [NOUN] and raise it off the surface
+Hold onto the [NOUN] and lift it up
+The [NOUN] is lifted up
+The [NOUN] is picked up off the ground
+The [NOUN] is raised up by hand
+The [NOUN] is grasped and lifted up
+The [NOUN] is taken up by hand
+The [NOUN] is retrieved and lifted up
+The [NOUN] is lifted off its surface
+The [NOUN] is elevated by being picked up
+The [NOUN] is hoisted up by hand
+The [NOUN] is scooped up and lifted
+The [NOUN] is lifted by the hand
+The [NOUN] is grasped and picked up
+The [NOUN] is raised by the palm
+The [NOUN] is taken up by the fingers
+The [NOUN] is held and lifted up
+The [NOUN] is lifted off the surface by the arm
+The [NOUN] is picked up and held by the wrist
+The [NOUN] is scooped up by the palm and lifted
+The [NOUN] is elevated by the hand
+The [NOUN] is taken up by the fingers of the hand
+The [NOUN] is grasped and raised
+The [NOUN] is lifted by the gripper
+The end effector picks up the [NOUN]
+The arm lifts the [NOUN]
+The [NOUN] is held aloft by the robotic hand
+The robotic gripper secures the [NOUN]
+The [NOUN] is lifted off the surface by the robotic arm
+The robotic manipulator seizes and elevates the [NOUN]
+The robotic end effector clasps and hoists the [NOUN]
+The [NOUN] is taken up by the robotic gripper

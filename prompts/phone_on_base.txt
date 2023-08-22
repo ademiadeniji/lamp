@@ -1,0 +1,10 @@
+phone on base
+pick up the phone and place it on the base
+the robot gripper picks up the phone and places it on the base
+reach toward the phone and move it to the base
+the robot arm grasps the phone on sets it down
+put the phone on the base
+the robot is placing the phone on the box
+seize the phone and drop it on the box
+robot arm grasped the phone and dropped it on the square base
+the arm is picking up the phone and placing it on the base

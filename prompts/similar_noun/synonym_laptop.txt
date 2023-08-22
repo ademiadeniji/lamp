@@ -1,0 +1,7 @@
+laptop
+notebook
+ultrabook
+netbook
+tablet
+chromebook
+computer

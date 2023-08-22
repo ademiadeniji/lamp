@@ -1,4 +1,4 @@
-# lamp
+# LAMP
 
 **LA**nguage **M**odulated **P**retraining (LAMP) is a method for pretraining a general RL agent for accelerated downstream learning by augmenting unsupervised RL rewards with extrinsic rewards parameterized by a Video-Langauge Model (VLM). 
 

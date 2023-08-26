@@ -158,6 +158,7 @@ front_wrist_to_wrist:
 
 vlsp:
   image_t_size: 1
+  use_imagenet_mae: False
   mae.view_masking: False
   mae.depth: 3
   mae.decoder_depth: 2

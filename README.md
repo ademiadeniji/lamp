@@ -1,6 +1,6 @@
 # LAMP
 
-**LA**nguage **M**odulated **P**retraining (LAMP💡) is a method for pretraining a general RL agent for accelerated downstream learning by augmenting unsupervised RL rewards with extrinsic rewards parameterized by a Video-Langauge Model (VLM).
+[**LA**nguage **M**odulated **P**retraining](https://arxiv.org/abs/2308.12270) (LAMP💡) is a method for pretraining a general RL agent for accelerated downstream learning by augmenting unsupervised RL rewards with extrinsic rewards parameterized by a Video-Langauge Model (VLM).
 
 <img src="method.png" alt="LAMP method figure" title="LAMP method figure">
 
@@ -31,4 +31,16 @@ To finetune your pretrained LAMP agent on the take lid off saucepan task run:
 
 ```bash
 TF_CPP_MIN_LOG_LEVEL=0 CUDA_VISIBLE_DEVICES=0 TF_XLA_FLAGS=--tf_xla_auto_jit=2 vglrun -d :0.0 python train.py --logdir /YOUR/LOGDIR/HERE --task take_lid_off_saucepan --seed 0 --device cuda:0 --vidlang_model_device cuda:0 --use_lang_embeddings True --configs front_wrist vlsp --curriculum.use False --critic_linear_probe True --loaddir [LOADDIR] --ts [NUM_STEPS_PRETRAINED] --plan2explore True --expl_intr_scale 0 --expl_extr_scale 1 --shaped_rewards True
+```
+## Citations
+If you use this code for your research, please cite our paper:
+```sh
+@misc{adeniji2023language,
+      title={Language Reward Modulation for Pretraining Reinforcement Learning}, 
+      author={Ademi Adeniji and Amber Xie and Carmelo Sferrazza and Younggyo Seo and Stephen James and Pieter Abbeel},
+      year={2023},
+      eprint={2308.12270},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```

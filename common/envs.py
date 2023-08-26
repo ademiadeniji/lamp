@@ -108,7 +108,6 @@ class RLBench:
                 {'mapping_mode': TextureMappingMode.PLANE, 'repeat_along_u': False, 'repeat_along_v': False, 'uv_scaling': [5.0, 3.0]},
                 {'mapping_mode': TextureMappingMode.PLANE, 'repeat_along_u': False, 'repeat_along_v': False, 'uv_scaling': [5.0, 5.0]}
             ]
-            # rand_config = VisualRandomizationConfig(image_directory='/shared/csferrazza/GitRepos/rlbench_vlsp/tests/unit/assets/textures', whitelist = ['Floor', 'Roof', 'Wall1', 'Wall2', 'Wall3', 'Wall4', 'diningTable_visible'])
             randomized_every = RandomizeEvery.EPISODE
         else:
             rand_config = None
